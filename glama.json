@@ -1,0 +1,12 @@
+{
+  "name": "novai-prices",
+  "description": "Which Chinese AI model is cheapest for your workload? Normalizes per-token, per-second and per-image pricing into comparable units and reads NovAI's live public price feed.",
+  "repository": "https://github.com/vvvvking/novai-prices-mcp",
+  "homepage": "https://aiapi-pro.com/?utm_source=glama&utm_medium=mcp_directory&utm_campaign=novai-prices",
+  "license": "MIT",
+  "runtime": "python",
+  "command": "python3",
+  "args": ["server.py"],
+  "categories": ["developer-tools", "pricing", "ai-infrastructure"],
+  "tags": ["mcp", "llm", "pricing", "chinese-ai", "model-comparison"]
+}
