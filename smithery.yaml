@@ -1,0 +1,15 @@
+name: novai-prices
+description: >-
+  Which Chinese AI model is cheapest for your workload? Normalizes per-token, per-second
+  and per-image pricing into comparable units: 1M input + 200K output for text models,
+  a 5-second clip for video, one image for image models. Reads NovAI's live public price feed.
+homepage: https://github.com/vvvvking/novai-prices-mcp
+license: MIT
+runtime: python
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({ command: "python3", args: ["server.py"] })
