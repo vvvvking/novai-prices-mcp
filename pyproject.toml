@@ -1,0 +1,29 @@
+[project]
+name = "novai-prices-mcp"
+version = "0.2.0"
+description = "MCP server: which Chinese AI model is cheapest for your workload (normalized per-clip / per-run prices)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "NovAI", email = "support@aiapi-pro.com" }]
+keywords = ["mcp", "llm", "pricing", "chinese-ai", "ai-gateway"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://aiapi-pro.com"
+Repository = "https://github.com/vvvvking/novai-prices-mcp"
+Source = "https://github.com/vvvvking/novai-prices-mcp/blob/main/server.py"
+
+[project.scripts]
+novai-prices-mcp = "server:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server"]
