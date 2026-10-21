@@ -1,3 +1,5 @@
+<!-- mcp-name: io.github.vvvvking/novai-prices-mcp -->
+
 # novai-prices-mcp
 
 An MCP server that answers one question well: **which Chinese AI model is cheapest for what I'm doing right now?**
@@ -11,17 +13,6 @@ It reads NovAI's live price feed (`https://aiapi-pro.com/china-ai-leaderboard.js
 | Image | per image, per generation | **one image** |
 
 Prices are the providers' list price passed through with a **1.0 multiplier and 0% platform markup** — the server reports the rate card, not a sales number.
-
-## Hosted endpoint (no install)
-
-The same read-only tools are served over streamable HTTP at:
-
-```
-https://aiapi-pro.com/api/mcp
-```
-
-No local process and no API key. `GET` the URL for a descriptor with example JSON-RPC payloads.
-Protocol versions 2024-11-05, 2025-03-26 and 2025-06-18; tools `cheapest_models`, `model_price`, `list_categories`.
 
 ## Tools
 
