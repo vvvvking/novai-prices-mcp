@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "novai-prices": {
+      "command": "python3",
+      "args": ["/absolute/path/to/novai-prices-mcp/server.py"]
+    }
+  }
+}
