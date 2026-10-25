@@ -2,12 +2,12 @@
 
 # novai-prices-mcp
 
-**Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io) as `io.github.vvvvking/novai-prices`** — remote `streamable-http` endpoint: `https://aiapi-pro.com/api/mcp`
+**Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io) as `io.github.vvvvking/novai-prices`** — remote `streamable-http` endpoint: `https://aiapi-pro.com/api/mcp`?utm_source=github_readme&utm_medium=readme
 
 
 An MCP server that answers one question well: **which Chinese AI model is cheapest for what I'm doing right now?**
 
-It reads NovAI's live price feed (`https://aiapi-pro.com/china-ai-leaderboard.json`) and normalizes every model into a comparable cost unit, because every provider quotes a different one:
+It reads NovAI's live price feed (`https://aiapi-pro.com/china-ai-leaderboard.json`?utm_source=github_readme&utm_medium=readme) and normalizes every model into a comparable cost unit, because every provider quotes a different one:
 
 | Modality | Unit the market quotes | Unit this server uses |
 |---|---|---|
