@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.vvvvking/novai-prices",
   "title": "NovAI Prices",
-  "description": "Live prices for 111 Chinese AI models across text, image, video, 3D and audio, plus batch cost calculators (per-minute video cost, per-image cost) and cheapest-model lookup by task.",
+  "description": "Live prices for 111 Chinese models; batch cost calculators for video and images.",
   "repository": {
     "url": "https://github.com/vvvvking/novai-prices-mcp",
     "source": "github"
