@@ -81,3 +81,23 @@ MIT
 - `punkpeye/awesome-remote-mcp-servers` (Aggregators)
 - mcpservers.org: https://mcpservers.org/servers/novai-prices-mcp (12 language versions)
 - mcpub.dev: https://mcpub.dev/?q=novai
+---
+
+## Data source
+
+The price data comes from NovAI's public price index: https://aiapi-pro.com/chinese-ai-api-pricing - one page per billing unit, generated from the same `/v1/models` endpoint the API serves. Every number this server returns can be checked against that page.
+
+- Coverage: 114 models across 22 Chinese providers (measured from `GET https://aiapi-pro.com/v1/models`).
+- Unit normalisation: prices are per million tokens, except media models (video / image / 3D / speech / music), which are billed per generation. The server keeps those in separate categories instead of mixing units.
+
+## Update frequency
+
+The index is regenerated weekly. `data/*.json` in this repository is the snapshot the server reads; if a price changes mid-week the snapshot is updated and **the commit timestamp on that file is the authoritative "as of" date**.
+
+## Maintenance
+
+Maintained by the NovAI team (https://aiapi-pro.com). Issues and pull requests are welcome for: wrong prices (include the vendor's own source URL), missing models, and normalisation errors. Expect an answer within a few days - this is a side project of the same team that runs the API, not a support channel.
+
+## Not a promotion
+
+The purpose of this server is to answer "which Chinese model is cheapest for this workload" with numbers that trace to a source and a date. It is not an advertisement: if the data is wrong, the correct outcome is a corrected dataset, not a better claim. Discounts and free tiers are reported because they change the answer, not because they are flattering.
